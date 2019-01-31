@@ -8,6 +8,7 @@ use super::types::{BigNum, GroupG1, GroupG2};
 use super::constants::{CURVE_ORDER, GeneratorG2, GroupG2_SIZE, MODBYTES};
 use bls::errors::SerzDeserzError;
 
+#[derive(Clone)]
 pub struct SigKey {
     pub x: BigNum
 }
